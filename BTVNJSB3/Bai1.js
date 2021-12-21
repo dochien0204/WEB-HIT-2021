@@ -3,7 +3,7 @@ const search = (str) =>
     let arr = str.split("");
     dem = 0;
     arr.forEach((val, index) => {
-        if(str.indexOf(val) !== -1 && str.lastIndexOf(val) === str.indexOf(val))
+        if(str.lastIndexOf(val) === str.indexOf(val))
             dem++;
         if(dem === 1)
             console.log(index);
